@@ -1,0 +1,468 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+@import '_reset';
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+header {
+  background-color: #ADFF2F;
+  -webkit-box-shadow: 0px 5px 10px #191919;
+  box-shadow: 0px 5px 10px #191919;
+  position: relative;
+  z-index: 10;
+
+  .head {
+    position: relative;
+
+    .head__container {
+      width: 100%;
+      height: 96.49px;
+
+      .head__navbar {
+        position: relative;
+        top: 30px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
+        .head__img{
+          position: absolute;
+          width: 50px;
+          height: 50px;
+        }
+        .head__element {
+          font-family: 'Bebas Neue';
+          font-weight: 400;
+          font-size: 32px;
+          line-height: 38px;
+
+          a {
+            color: #000000;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  background: #091115;
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+
+  .intro {
+    position: relative;
+    width: 100%;
+    height: 808.11px;
+
+    .intro__container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+
+      .intro__allText {
+        position: relative;
+        top: 200px;
+        z-index: 2;
+
+        .intro__title {
+          font-family: 'Bebas Neue';
+          font-weight: 400;
+          font-size: 48px;
+          line-height: 58px;
+          color: #FFFFFF;
+          text-align: center;
+        }
+
+        .intro__subtitle {
+          font-family: 'Poiret One';
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 28px;
+          text-align: center;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+
+  .page-video {
+    position: absolute;
+    z-index: 1;
+    min-width: 100%;
+    min-height: 914px;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+
+    .video {
+      position: absolute;
+      min-width: 100%;
+      min-height: 914px;
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .kirchez__container {
+    position: relative;
+    height: 500px;
+    max-width: 100%;
+
+    .kirchez__main {
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      height: 500px;
+      max-width: 100%;
+      margin-top: 84px;
+      margin-right: 65px;
+
+      .kirchez__alltext {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
+        margin-right: 38px;
+
+        .kirchez__nickname {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          position: relative;
+          height: 35px;
+          width: 113;
+          font-family: 'Bebas Neue';
+          font-size: 40px;
+          font-weight: 900;
+          margin-top: 204px;
+          margin-left: 205px;
+          color: white;
+
+          .kirchez__aka {
+            font-family: 'Bebas Neue';
+            font-size: 22px;
+            font-weight: 400;
+            color: white;
+          }
+        }
+
+        .kirchez__fullname {
+          font-family: 'Bebas Neue';
+          font-size: 24px;
+          font-weight: 400;
+          color: white;
+          margin-left: 535px;
+        }
+
+        .kirchez__description {
+          width: 590px;
+          height: 300px;
+          font-family: 'Poiret One';
+          font-weight: 400;
+          font-size: 32px;
+          color: #FFFFFF;
+          margin-left: 537px;
+        }
+      }
+
+      .kirchez__avatar {
+        width: 401px;
+        height: 379px;
+        border-radius: 40px;
+        margin-top: 85px;
+      }
+    }
+  }
+
+  .leva__container {
+    position: relative;
+    height: 500px;
+    max-width: 100%;
+
+    .leva__main {
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+      height: 500px;
+      max-width: 100%;
+      margin-left: 65px;
+      margin-top: 100px;
+
+      .leva__alltext {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
+        margin-left: 38px;
+
+        .leva__nickname {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+          position: relative;
+          height: 35px;
+          width: 113;
+          font-family: 'Bebas Neue';
+          font-size: 40px;
+          font-weight: 900;
+          color: white;
+          margin-top: 104px;
+          margin-right: 537px;
+
+          .leva__aka {
+            font-family: 'Bebas Neue';
+            font-size: 22px;
+            font-weight: 400;
+            color: white;
+          }
+        }
+
+        .leva__fullname {
+          font-family: 'Bebas Neue';
+          font-size: 24px;
+          font-weight: 400;
+          color: white;
+        }
+
+        .leva__description {
+          width: 590px;
+          height: 300px;
+          font-family: 'Poiret One';
+          font-weight: 400;
+          font-size: 32px;
+          color: #FFFFFF;
+        }
+
+        .leva__avatar {
+          width: 401px;
+          height: 379px;
+          border-radius: 40px;
+        }
+      }
+    }
+  }
+
+  .line2 {
+    height: 700px;
+  }
+
+  .sunsetik__container {
+    position: relative;
+    bottom: 149px;
+    height: 500px;
+    max-width: 100%;
+
+    .sunsetik__main {
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      height: 500px;
+      max-width: 100%;
+      margin-top: 200px;
+      margin-right: 65px;
+
+      .sunsetik__alltext {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
+        margin-right: 38px;
+
+        .sunsetik__nickname {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          position: relative;
+          height: 35px;
+          width: 113;
+          font-family: 'Bebas Neue';
+          font-size: 40px;
+          font-weight: 900;
+          margin-top: 104px;
+          margin-left: 115px;
+          color: white;
+
+          .sunsetik__aka {
+            font-family: 'Bebas Neue';
+            font-size: 22px;
+            font-weight: 400;
+            color: white;
+          }
+        }
+      }
+    }
+
+    .sunsetik__fullname {
+      font-family: 'Bebas Neue';
+      font-size: 24px;
+      font-weight: 400;
+      color: white;
+      margin-left: 535px;
+    }
+
+    .sunsetik__description {
+      width: 590px;
+      height: 300px;
+      font-family: 'Poiret One';
+      font-weight: 400;
+      font-size: 32px;
+      color: #FFFFFF;
+      margin-left: 537px;
+    }
+  }
+
+  .sunsetik__avatar {
+    width: 401px;
+    height: 379px;
+    border-radius: 40px;
+    margin-top: 85px;
+  }
+}
+
+footer {
+  position: relative;
+
+  .footer {
+    position: relative;
+    width: 100%;
+    height: 264px;
+    background-color: #191919;
+
+    .footer__container .footer__allText {
+      text-align: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      position: relative;
+      top: 58px;
+      color: white;
+      font-family: 'Bebas Neue';
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 38px;
+
+      .logicool {
+      	margin-left: 150px;
+      	height: 200px;
+      }
+
+      .footer__madeBy .footer__nick {
+        font-family: 'Poiret One';
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 17px;
+      }
+    }
+  }
+}
